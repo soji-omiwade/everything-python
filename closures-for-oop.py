@@ -9,7 +9,7 @@ def make_bike(n, color='black'):
     
 bike8 = make_bike(8) #arg is the diameter of the wheel and color of bike
 bike42_red = make_bike(42, 'red')
-
+cambosa = 42 #just testing how the global namespace is implemented
 #operate on a bike as example
 print(bike8('area'))
 print(bike8('color'))
