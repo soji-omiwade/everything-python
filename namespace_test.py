@@ -1,6 +1,5 @@
 def scope_test():
     def do_local():
-        print('local-print:', spam)
         spam = "local spam"
     def do_nonlocal():
         # kimbo = spam; print('do_nonlocal(): ', spam)
