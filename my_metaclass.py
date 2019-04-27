@@ -2,7 +2,10 @@
 The code samples in here derive mostly from:
 https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python
 """
-"""classes are objects. everything is an object in python"""
+"""classes are objects. everything is an object in python
+
+only when you create a class does the metaclass-new method get called! not when you create an instance of said class
+"""
 class ObjectCreator(object):
     pass
 my_object = ObjectCreator()
@@ -116,7 +119,7 @@ print('hasattr(f, bar):', hasattr(f, 'bar'))
 print('hasattr(f, BAR):', hasattr(f, 'BAR'))
         
 
-print('\n meta class creation using OOP')
+print('\n meta class creation using OOP without super')
 class UpperAttrMetaclassOOP(type):
     def __new__(upper_attr_metaclass, future_class_name, future_class_parents, \
     future_class_attr):
@@ -141,26 +144,41 @@ print('hasattr(f, bar):', hasattr(f, 'bar'))
 print('hasattr(f, BAR):', hasattr(f, 'BAR'))
 
 
-print('\n meta class creation using OOP')
+
+
+
+print('\n meta class creation using OOP for production with super')
 class UpperAttrMetaclassOOPForProduction(type):
     def __new__(cls, clsname, bases, dct):
+        print('\nbegin intercepting creating a new class')
         uppercase_attr = {}
         for name, val in dct.items():
             if not name.startswith('__'):
                 uppercase_attr[name.upper()] = val
             else:
                 uppercase_attr[name] = val
+        print('end intercepting creating a new class')
         return super(UpperAttrMetaclassOOPForProduction, cls).__new__(\
             cls, clsname, bases, uppercase_attr)
 
-class UpperAttrMetaclassOOPForProductionTest(\
-    metaclass = UpperAttrMetaclassOOPForProduction):
+print('\nbegin creating a new class object Thing')
+class Thing(metaclass = UpperAttrMetaclassOOPForProduction):
     bar = 'bip'
-print('hasattr(UpperAttrMetaclassOOPForProductionTest, "bar"):', 
-    hasattr(UpperAttrMetaclassOOPForProductionTest, 'bar'))
-print('hasattr(UpperAttrMetaclassOOPForProductionTest, "BAR"):', 
-    hasattr(UpperAttrMetaclassOOPForProductionTest, 'BAR'))
+print('end creating a new class object Thing')
 
-f = UpperAttrMetaclassOOPForProductionTest()
+print('\nbegin checking attribute of class Thing')   
+print('hasattr(Thing, "bar"):', 
+    hasattr(Thing, 'bar'))
+print('hasattr(Thing, "BAR"):', 
+    hasattr(Thing, 'BAR'))
+print('end checking attribute of class Thing')   
+
+
+print('\nbegin create a thing!')
+f = Thing()
+print('end creating a thing')
+
+print('\nbegin checking attribute of instance of class Thing')   
 print('hasattr(f, bar):', hasattr(f, 'bar'))
 print('hasattr(f, BAR):', hasattr(f, 'BAR'))
+print('end checking attribute of instance of class Thing')   
