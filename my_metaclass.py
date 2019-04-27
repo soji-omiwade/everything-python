@@ -92,7 +92,7 @@ print('hasattr(Zoo, "BAR"):', hasattr(Zoo, 'BAR'))
 #to above, True/False depending on whether parent has a customized 
 #   metaclass 
 
-print('\n UpperAttrMetaclass')
+print('\n meta class creation using object based programming')
 #remember type is a class like str and int and hence can be extended
 class UpperAttrMetaclass(type):
     def __new__(upper_attr_metaclass, future_class_name, future_class_parents, \
@@ -115,3 +115,52 @@ f = UpperAttrMetaclassTest()
 print('hasattr(f, bar):', hasattr(f, 'bar'))
 print('hasattr(f, BAR):', hasattr(f, 'BAR'))
         
+
+print('\n meta class creation using OOP')
+class UpperAttrMetaclassOOP(type):
+    def __new__(upper_attr_metaclass, future_class_name, future_class_parents, \
+    future_class_attr):
+        uppercase_attr = {}
+        for name, val in future_class_attr.items():
+            if not name.startswith('__'):
+                uppercase_attr[name.upper()] = val
+            else:
+                uppercase_attr[name] = val
+        return type.__new__(upper_attr_metaclass, future_class_name,\
+            future_class_parents, uppercase_attr)
+        
+class UpperAttrMetaclassTestOOP(metaclass = UpperAttrMetaclassOOP):
+    bar = 'bip'
+print('hasattr(UpperAttrMetaclassTestOOP, "bar"):', 
+    hasattr(UpperAttrMetaclassTestOOP, 'bar'))
+print('hasattr(UpperAttrMetaclassTestOOP, "BAR"):', 
+    hasattr(UpperAttrMetaclassTestOOP, 'BAR'))
+
+f = UpperAttrMetaclassTestOOP()
+print('hasattr(f, bar):', hasattr(f, 'bar'))
+print('hasattr(f, BAR):', hasattr(f, 'BAR'))
+
+
+print('\n meta class creation using OOP')
+class UpperAttrMetaclassOOPForProduction(type):
+    def __new__(cls, clsname, bases, dct):
+        uppercase_attr = {}
+        for name, val in dct.items():
+            if not name.startswith('__'):
+                uppercase_attr[name.upper()] = val
+            else:
+                uppercase_attr[name] = val
+        return super(UpperAttrMetaclassOOPForProduction, cls).__new__(\
+            cls, clsname, bases, uppercase_attr)
+
+class UpperAttrMetaclassOOPForProductionTest(\
+    metaclass = UpperAttrMetaclassOOPForProduction):
+    bar = 'bip'
+print('hasattr(UpperAttrMetaclassOOPForProductionTest, "bar"):', 
+    hasattr(UpperAttrMetaclassOOPForProductionTest, 'bar'))
+print('hasattr(UpperAttrMetaclassOOPForProductionTest, "BAR"):', 
+    hasattr(UpperAttrMetaclassOOPForProductionTest, 'BAR'))
+
+f = UpperAttrMetaclassOOPForProductionTest()
+print('hasattr(f, bar):', hasattr(f, 'bar'))
+print('hasattr(f, BAR):', hasattr(f, 'BAR'))
