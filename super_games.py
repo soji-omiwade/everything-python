@@ -4,6 +4,7 @@ super(type, obj)
     instancec. so it's an object (of type super). which isn't of type 
     type's imm. parent, but at the same time isn't obj. very interesting
 """
+type(
 class A:
     def __init__(self):
         self.me = 'a'
@@ -15,7 +16,7 @@ class B(A):
         self.me = 'b'
         print('B object', self, 'created')
     def pooh(self):
-        return (self,'B:pooh')
+        return str((self,'B:pooh')) + '\n----\n' + str(super().pooh())
     def echo(self):
         print(super(B, self).pooh()) #this hits A's pooh, not B's!!!
         
@@ -31,13 +32,13 @@ class C(B):
     def pooh(self):
         return (self,'C:pooh')
     def echo(self):
-        print(B.pooh(self))
-        print(super(C, self).pooh() == B.pooh(self)) 
-        print(A.pooh(self))
-        print(super(B, self).pooh() == A.pooh(self)) 
-
-b = B()
-b.echo()
-print()
+        # print(B.pooh(self))
+        # print(super(C, self).pooh() == B.pooh(self)) 
+        # print(A.pooh(self))
+        # print(super(B, self).pooh() == A.pooh(self)) 
+        print(super().pooh())
+# b = B()
+# b.echo()
+# print()
 c = C()
 c.echo()
