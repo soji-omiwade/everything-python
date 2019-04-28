@@ -150,7 +150,9 @@ print('hasattr(f, BAR):', hasattr(f, 'BAR'))
 print('\n meta class creation using OOP for production with super')
 class UpperAttrMetaclassOOPForProduction(type):
     def __new__(cls, clsname, bases, dct):
-        print('\nbegin intercepting creating a new class')
+        print('\nbegin intercepting...\n\t creating a new class {0}\
+            \n\t via {1}'.format(clsname, cls))
+        print('attributes: ', dct)
         uppercase_attr = {}
         for name, val in dct.items():
             if not name.startswith('__'):
@@ -164,6 +166,11 @@ class UpperAttrMetaclassOOPForProduction(type):
 print('\nbegin creating a new class object Thing')
 class Thing(metaclass = UpperAttrMetaclassOOPForProduction):
     bar = 'bip'
+    def foo(self, a=42):
+        print(a)
+    @classmethod
+    def goo(cls):
+        print(cls.bar)
 print('end creating a new class object Thing')
 
 print('\nbegin checking attribute of class Thing')   
