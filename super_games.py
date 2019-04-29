@@ -25,6 +25,9 @@ class B(A):
     @classmethod
     def glue(cls):
         return (cls, 'B:glue')
+    @staticmethod
+    def zoo():
+        print('yeah')
 
 class C(B):
     def __init__(self):
