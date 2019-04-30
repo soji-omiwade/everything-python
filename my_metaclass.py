@@ -6,6 +6,11 @@ https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python
 
 only when you create a class does the metaclass-new method get called! not when you create an instance of said class
 """
+
+
+
+
+"""let us begin"""
 class ObjectCreator(object):
     pass
 my_object = ObjectCreator()
@@ -55,10 +60,18 @@ FooChild.echo_bar_more = echo_bar_more
 fc.echo_bar_more()
 
 
+
+
+
+
+
+
 print('\n let the metaclass showdown begin!')
+
+
 """what are metaclasses!"""
 #the metaclass will automatically get passed the same argument
-#that you usally pass to `type`
+#that you usually pass to `type`
 def upper_attr(future_class_name, future_class_parents, future_class_attr):
     """
       Return a class object with the list of its attribute turned into uppercase
@@ -77,7 +90,7 @@ def upper_attr(future_class_name, future_class_parents, future_class_attr):
 
 __metaclass__ = upper_attr
 
-class Foo():
+class Foo(__metaclass__):
     bar = 'bip'
 print('hasattr(Foo, "bar"):', hasattr(Foo, 'bar'))
 print('hasattr(Foo, "BAR"):', hasattr(Foo, 'BAR'))
@@ -90,10 +103,12 @@ class Zoo(Foo, metaclass = __metaclass__):
     car = 'zoom'
     
 print("hasattr(Zoo, 'CAR'):", hasattr(Zoo, 'CAR'))
-#above is False until you pass it a metaclass that does the uppercase
+#above is False until you pass Zoo a metaclass that does the uppercase
 print('hasattr(Zoo, "BAR"):', hasattr(Zoo, 'BAR'))
 #to above, True/False depending on whether parent has a customized 
 #   metaclass 
+
+
 
 print('\n meta class creation using object based programming')
 #remember type is a class like str and int and hence can be extended
@@ -119,6 +134,7 @@ print('hasattr(f, bar):', hasattr(f, 'bar'))
 print('hasattr(f, BAR):', hasattr(f, 'BAR'))
         
 
+        
 print('\n meta class creation using OOP without super')
 class UpperAttrMetaclassOOP(type):
     def __new__(upper_attr_metaclass, future_class_name, future_class_parents, \
@@ -145,8 +161,6 @@ print('hasattr(f, BAR):', hasattr(f, 'BAR'))
 
 
 
-
-
 print('\n meta class creation using OOP for production with super')
 class UpperAttrMetaclassOOPForProduction(type):
     def __new__(cls, clsname, bases, dct):
@@ -163,29 +177,5 @@ class UpperAttrMetaclassOOPForProduction(type):
         return super(UpperAttrMetaclassOOPForProduction, cls).__new__(\
             cls, clsname, bases, uppercase_attr)
 
-print('\nbegin creating a new class object Thing')
-class Thing(metaclass = UpperAttrMetaclassOOPForProduction):
-    bar = 'bip'
-    def foo(self, a=42):
-        print(a)
-    @classmethod
-    def goo(cls):
-        print(cls.bar)
-print('end creating a new class object Thing')
-
-print('\nbegin checking attribute of class Thing')   
-print('hasattr(Thing, "bar"):', 
-    hasattr(Thing, 'bar'))
-print('hasattr(Thing, "BAR"):', 
-    hasattr(Thing, 'BAR'))
-print('end checking attribute of class Thing')   
-
-
-print('\nbegin create a thing!')
-f = Thing()
-print('end creating a thing')
-
-print('\nbegin checking attribute of instance of class Thing')   
-print('hasattr(f, bar):', hasattr(f, 'bar'))
-print('hasattr(f, BAR):', hasattr(f, 'BAR'))
-print('end checking attribute of instance of class Thing')   
+            
+           
