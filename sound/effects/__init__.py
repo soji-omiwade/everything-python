@@ -29,7 +29,7 @@ if __all__ is defined, load only the names (including any module specified) ther
 """
 
 
-print('initializing the effects sub-package')
+print('initializing the effects sub-package from module', __name__)
 a = 'effects'
 class TestClass:
     pass

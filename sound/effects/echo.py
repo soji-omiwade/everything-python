@@ -1,4 +1,4 @@
-print('echo echo echo echo')
+print('running module', __name__)
 def samba(*args):
     pass
 def echofilter(*args, **kwargs):
