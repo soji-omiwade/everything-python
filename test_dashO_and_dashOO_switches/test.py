@@ -6,6 +6,9 @@ a = 42
 assert a == 42
 b = 12349712347892
 b -= a
+"""
+this is not part of the doc of course
+"""
 b -= a
 b += 1
 b -= 1

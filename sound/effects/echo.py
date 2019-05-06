@@ -1,4 +1,7 @@
-print('running module', __name__)
+import sys
+print('running module {0} from package {1}'.format(__name__, __package__))
+for x in sys.argv:
+    print(x)
 def samba(*args):
     pass
 def echofilter(*args, **kwargs):

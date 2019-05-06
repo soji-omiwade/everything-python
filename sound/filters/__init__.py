@@ -1,2 +1,2 @@
-print('initializing the filters sub-package from module', __name__)
+print('initializing package {1} from module {0}'.format(__name__, __package__))
 a = 'filters'

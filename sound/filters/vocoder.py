@@ -1,16 +1,12 @@
-print('running module', __name__)
-import sys
-from . import equalizer
-from ..effects import echo
-print('mis vocoder')
-my_vocoder = 'mi vocoder'
+print('running module "{0}" from package "{1}"'.format(__name__, __package__))
+   
 
-echo_vocoder = echo.echofilter('vocoder-input', 42, 43, foo=my_vocoder)
+"""
+import filters.equalizer
+. -> sound.filters
+.. -> sound
 
-try: 
-    echofilter(1,2)
-except Exception as e: 
-    print('exception: ', e)
-    
-from ..effects.echo import echofilter
-echofilter(1,2)
+note however if you do  python -m then we the relative import works. this must
+be because the switch tells python to run the argument to the switch as if it
+the main was running and then it did import 'arg'
+""";
