@@ -58,3 +58,20 @@ repr: makes it possible to stringify an expr so that if you need to get it back
 you can run eval() on the string returned by repr. or....
 UPDATE: official python https://docs.python.org/3/library/functions.html#ascii
 states that repr returns a printable representation of an object
+
+alas. i get the meaning of the bare asterisk: if you are going to specify
+an argument after the *, then it must be a keyword arg so to so, up until the
+**kw
+next thing to quickly do: what's the meaning of '/' when passed as a parameter
+
+not only does the author of the tutorial avoid long lines, but they don't use \
+to break lines. they just use two prints instead!
+>>> for x in range(1, 11):
+...     print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
+...     # Note use of 'end' on previous line
+...     print(repr(x*x*x).rjust(4))
+
+
+it's interesting at first to find that (i) scalar to vector multiplication and (ii) vector addition is not built into python. but then you realize that this is because the implementation you expect already has a meaning: append! That is, already we have 
+i) [2,3] + [14,5] = [2,3,14,5] and 
+ii) 3 * [4,5] = [4, 5, 4, 5, 4, 5]
