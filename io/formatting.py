@@ -1,3 +1,6 @@
+import json
+from pretty_print import next_sample as ns
+
 w = 'wishes'; h = 'horses'; b = 'beggars'; r = 'ride'
 
 # s = 'if {first} were {second}, {third} would {fourth}'
@@ -19,12 +22,12 @@ w = 'wishes'; h = 'horses'; b = 'beggars'; r = 'ride'
 
 
 ns('use vars to print all locals via format(**vars())')
-for x in vars():
+for x in vars().copy():
     print(x+':', ('{'+str(x)+'}').format(**vars()))
 print()
 
 ns('use vars to print all locals with format(x)')
-for x,y in vars().items():
+for x,y in vars().copy().items():
     print(x+':', y)
 print()
 
@@ -59,4 +62,18 @@ print('3.14151234578'.zfill(5))
 
 ns('old string formatting')
 import math
-print('The value of pi is approx -%5.3f-%3d-' % math.pi  42)
+print('The value of pi is approx -%5.3f-%3d-' % (math.pi, 42))
+
+
+ns('simple json serializing and deserializing')
+i = 42
+s = str(i)
+t = (i,s)
+l = [x for x in range(i) if x % 10 == 0]
+d = {x:x**2 for x in l}
+a = (i, s, t, l, d)
+
+with open('json_file', 'w') as f: 
+    for x in a:
+        json.dump(x, f)
+        f.write('\n')
