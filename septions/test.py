@@ -1,3 +1,4 @@
+import builtins
 from pretty_print import next_sample as ns
 
 class Foo(BaseException):
@@ -23,14 +24,15 @@ except(RuntimeError, TypeError, NameError):
     
 ns('exceptions that are of BaseException, but not of Exception')
 
-print('__builtins__ class: ', __builtins__.__class__)
-print(dir(__builtins__))
-raise Exception
-for x in dir(__builtins__):
-    type_check = type(eval(x)) == type
-    base_exception_check = issubclass(eval(x), BaseException)
-    not_exception_check = not issubclass(eval(x), Exception)
-    if type_check and  base_exception_check and not_exception_check:
+# raise Exception
+outside = """
+type_check = type(eval(x)) == type
+is_base_exception_class = type_check and issubclass(eval(x), BaseException)
+is_not_exception_class = type_check and not issubclass(eval(x), Exception)
+"""
+for x in dir(builtins):
+    exec(outside)
+    if type_check and is_base_exception_class and is_not_exception_class:
         print(x)
 """result of above: 
 ...

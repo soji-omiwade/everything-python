@@ -75,3 +75,9 @@ to break lines. they just use two prints instead!
 it's interesting at first to find that (i) scalar to vector multiplication and (ii) vector addition is not built into python. but then you realize that this is because the implementation you expect already has a meaning: append! That is, already we have 
 i) [2,3] + [14,5] = [2,3,14,5] and 
 ii) 3 * [4,5] = [4, 5, 4, 5, 4, 5]
+
+
+finally i understand the meaning of the tutorial part about a module's 
+attributes and its globals sharing the same namespace except for the __dict__:
+you can't access __dict__ from inside the module itself though you can from
+outside it.
