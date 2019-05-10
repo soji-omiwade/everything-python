@@ -24,5 +24,3 @@ repeat = 7
 num = 1000
 print(min(timeit.Timer(by_map, setup = setup).repeat(repeat, num)))
 print(min(timeit.Timer(by_zip, setup = setup).repeat(repeat, num)))
-# print(min(timeit.Timer('', setup = setup).repeat(7, 1000)))
-# print(min(timeit.Timer('', setup = setup).repeat(7, 1000)))
