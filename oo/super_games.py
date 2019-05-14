@@ -10,6 +10,8 @@ class A:
         print('A object', self, 'created')
     def pooh(self):
         return (self,'A:pooh')
+    def winnie(self):
+        return 'booyah!'
     @classmethod
     def glue(cls):
         return (cls, 'A:glue')
@@ -18,7 +20,7 @@ class B(A):
         self.me = 'b'
         print('object', self, 'initialized in class ', B)
     def pooh(self):
-        return str((self,'B:pooh')) + '\n----\n' + str(super().pooh())
+        return str((self,'B:pooh')) + '----' + str(super().pooh())
     def echo(self):
         print(super(B, self).pooh()) 
         print(A.pooh(self) == super(B, self).pooh())
