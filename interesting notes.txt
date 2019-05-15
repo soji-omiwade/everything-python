@@ -81,3 +81,26 @@ finally i understand the meaning of the tutorial part about a module's
 attributes and its globals sharing the same namespace except for the __dict__:
 you can't access __dict__ from inside the module itself though you can from
 outside it.
+
+super super super. this is a proxy object to one of the parent's of a class. so super().pooh within a class will (using python's mro) call one (and only one)
+of the parents of the object making the call. 
+
+x = 10
+>>> for i in range(x):
+...     print(i, end=', ')
+...     x = 0
+...
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+shoulnd't be suprising. the object x points to used in range (for each of its
+yield stmt). x = 0 merely makes the name x point to another object but doesn't 
+change that which range is using!
+
+
+iterator is really just a counter to an array behind the scenes. where the 
+object has a pointer to the head of the array. so deleting say the first element
+doesn't affect the iterator *except* it does! because the counter will always 
+increment one from the head each time next is called. thus in this case 
+the iterator will iterate one less, and retrieve the element *after* the deleted
+element (again, since the counter is based from the head)
+
+
