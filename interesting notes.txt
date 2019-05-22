@@ -62,7 +62,13 @@ states that repr returns a printable representation of an object
 alas. i get the meaning of the bare asterisk: if you are going to specify
 an argument after the *, then it must be a keyword arg so to so, up until the
 **kw
+stated simply: after the *, anything declared is taken as a keyword argument. 
+in this sense, def foo(positional-args, *) is taken as error because the * means
+you intend to *start declaring parameters for* keyword args
+
 next thing to quickly do: what's the meaning of '/' when passed as a parameter
+
+
 
 not only does the author of the tutorial avoid long lines, but they don't use \
 to break lines. they just use two prints instead!

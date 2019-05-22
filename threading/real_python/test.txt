@@ -1,0 +1,6 @@
+f writes
+g writes
+g writes
+f writes
+f writes
+g writes
