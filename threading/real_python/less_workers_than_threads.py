@@ -5,7 +5,7 @@ from multiple_threads import thread_function
 import concurrent.futures
 
 """
-Ideally, this would be tested  with the unittest framework
+TODO: Ideally, this would be tested  with the unittest framework
 """
 
 if __name__ == '__main__':
