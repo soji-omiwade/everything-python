@@ -2,6 +2,7 @@ import unittest
 
 print(f'{__name__}, {__package__}: initializing the module!') 
 from .. import forty_two
+# from . im
 
 class DiscoverTestCase(unittest.TestCase):
     def test(self):

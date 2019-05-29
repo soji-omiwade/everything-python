@@ -14,7 +14,7 @@ to achieve above, it supports some concepts in an OO way:
 unittest.main()
     
 """
-
-a =
+"""
+"""
 forty_two = '42'
 print(f'{__name__}, {__package__}: initializing the module!') 
