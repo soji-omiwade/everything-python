@@ -4,9 +4,6 @@ def testSomething():
     l = [2,3,4]
     assert len(l) is 3
     
-def setUp():
-    l = [2,3,4]
-
 testcase = unittest.FunctionTestCase(testSomething,)
 
 def suite():
