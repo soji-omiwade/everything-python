@@ -1,3 +1,4 @@
+import time
 import unittest
 
 # print(f'package "{__package__}" and type: "{type(__package__)}"')
@@ -15,7 +16,8 @@ class MyTestCase(unittest.TestCase):
         
     def test_global_import_from_module_init(self):
         self.assertEqual(42, 42)
-        
+        # time.sleep(3600)
+        # self.fail('sorry!')
 
 class MyOtherTestCase(unittest.TestCase):
     def test(self):
