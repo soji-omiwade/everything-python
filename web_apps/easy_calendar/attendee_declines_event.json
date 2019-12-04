@@ -1,0 +1,68 @@
+
+
+	PATCH https://www.googleapis.com/calendar/v3/calendars/calendarId/events/eventId
+	calendar_id=soji.omiwade@gmail.com
+	eventId=v262n11p8drenuk0u9usmjho1k
+
+
+JSON LOAD
+
+		{
+		  "attendees": [
+			{
+			  "responseStatus": "declined",
+			  "email": "soji.omiwade@gmail.com"
+			  "comment": "Impromptu client trip"
+			}
+		  ]
+		}
+
+
+Response: 
+{
+ "kind": "calendar#event",
+ "etag": "\"3148230867526000\"",
+ "id": "v262n11p8drenuk0u9usmjho1k",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=djI2Mm4xMXA4ZHJlbnVrMHU5dXNtamhvMWtfMjAxOTExMjhUMTYwMDAwWiBzb2ppLm9taXdhZGVAbQ",
+ "created": "2019-11-18T21:46:25.000Z",
+ "updated": "2019-11-18T22:17:13.763Z",
+ "summary": "Foo",
+ "description": "A chance to hear more about Retain.",
+ "location": "880 Harrison Street, Suite 201, San Francisco, CA",
+ "creator": {
+  "email": "omiwade@gmail.com"
+ },
+ "organizer": {
+  "email": "omiwade@gmail.com"
+ },
+ "start": {
+  "dateTime": "2019-11-28T08:00:00-08:00",
+  "timeZone": "America/Los_Angeles"
+ },
+ "end": {
+  "dateTime": "2019-11-28T10:00:00-08:00",
+  "timeZone": "America/Los_Angeles"
+ },
+ "recurrence": [
+  "RRULE:FREQ=DAILY;COUNT=2"
+ ],
+ "iCalUID": "v262n11p8drenuk0u9usmjho1k@google.com",
+
+
+				 "sequence": 0,
+				 "attendees": [
+				  {
+				   "email": "john.smith@gmail.com",
+				   "responseStatus": "needsAction"
+				  },
+				  {
+				   "email": "soji.omiwade@gmail.com",
+				   "self": true,
+				   "responseStatus": "declined"
+				  }
+				 ],
+				 "reminders": {
+				  "useDefault": true
+				 }
+}

@@ -1,0 +1,57 @@
+{
+ "kind": "calendar#events",
+ "etag": "\"p338fbk7sgjrea0g\"",
+ "summary": "soji.omiwade@gmail.com",
+ "updated": "2019-11-19T10:13:08.706Z",
+ "timeZone": "Europe/Istanbul",
+ "accessRole": "owner",
+ "defaultReminders": [
+  {
+   "method": "popup",
+   "minutes": 30
+  }
+ ],
+ "nextSyncToken": "CND10PyE9uUCEND10PyE9uUCGAU=",
+ "items": [
+  {
+   "kind": "calendar#event",
+   "etag": "\"3148267022648000\"",
+   "id": "hvpj80449nvttgfm9v5hbqhrig",
+   "status": "confirmed",
+   "htmlLink": "https://www.google.com/calendar/event?eid=aHZwajgwNDQ5bnZ0dGdmbTl2NWhicWhyaWcgc29qaS5vbWl3YWRlQG0",
+   "created": "2019-11-19T03:18:30.000Z",
+   "updated": "2019-11-19T03:18:31.324Z",
+   "summary": "Timezone test",
+   "description": "Google captures the complexity",
+   "location": "880 Harrison Street, Suite 201, San Francisco, CA",
+   "creator": {
+    "email": "omiwade@gmail.com"
+   },
+   "organizer": {
+    "email": "omiwade@gmail.com"
+   },
+   "start": {
+    "dateTime": "2019-12-01T21:00:00+03:00"
+   },
+   "end": {
+    "dateTime": "2019-12-01T22:00:00+03:00"
+   },
+   "iCalUID": "hvpj80449nvttgfm9v5hbqhrig@google.com",
+   "sequence": 0,
+   "attendees": [
+    {
+     "email": "soji.omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "dunni.aribuki@gmail.com",
+     "responseStatus": "needsAction"
+    }
+   ],
+   "reminders": {
+    "useDefault": true
+   }
+  }
+ ]
+}

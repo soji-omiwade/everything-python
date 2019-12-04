@@ -1,0 +1,22 @@
+user scenarios: 
+	
+
+launch app to schedule meeting											  -> could't be scheduled
+																		/
+user launches app -> pick attendees, duration, urgency -> hits executes -> could be scheduled.
+
+when user launches app: 
+	4. pushes view calendar
+		-> 7
+	7. a view of scheduled meetings
+	2. pick attendees, duration, urgency
+		-> 3
+		-> 5 
+		-> 4. => are you sure you want to leave?
+	3. from 2. hits executes 
+	5. from 3. Output OK indicating meeting succeeded or not
+	6. from 3. meeting time couldn't be found
+		
+	user can push any button at any time.
+
+	

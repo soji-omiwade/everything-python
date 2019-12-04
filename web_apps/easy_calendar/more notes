@@ -1,0 +1,53 @@
+notes: 
+	- i chose the not duplicate the calendar within the app. 
+	- the app keeps no data itself. 
+	- there are pros/cons.
+	- pro: no sync issues. 
+	- things liek
+- respond to meeting time with:
+	. a new-time proposal: 
+		cannot currently be done [sep '19]
+		but we can make it work!
+			-decline the meeting. 
+			-if comment has proposal then
+				show "a proposal with given time"
+				organizer accepts proposal -> change meeting time to what is on comment and PATCH it or UPDATE it.
+	. add response:
+		- use the comment
+	. add attachment: 
+		since we chose to use Google exclusively to store the events, then we are limited to using the driveService: 
+			file = driveService.files().get(fileId=fileId).execute()
+			event = calendarService.events().get(calendarId=calendarId,
+												 eventId=eventId).execute()
+
+			attachments = event.get('attachments', []])
+			attachments.append({
+				'fileUrl': file['alternateLink'],
+				'mimeType': file['mimeType'],
+				'title': file['title']
+			})
+
+- cancel invite
+
+- can a meeting in the past be accepted? yes. for audit. 
+
+- timezones. convert current timezone to UTC?
+	No. because if the event recurs Google won't let you get away with that
+	Instead: for each user: 
+		- do a time conversion based on the offset to the user's timezone.
+		- set the timezone of the user.
+		Thankfully you actually don't need to do that. Google will report 
+		the event in the timezone the calendar is set. 
+		
+note: for an event of which you are an attendee, you can change the attendee response: needs Action -> tentative, declined, accepted
+
+
+
+what does it mean for a user to connect their calendar: 
+	- their timezone is set. 
+	- yes. 
+	
+cancel event if fewer than x people
+
+
+if this app. doesn't work the way we want, then overtime we can do it. 

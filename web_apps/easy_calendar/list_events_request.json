@@ -1,0 +1,998 @@
+
+    GET https://www.googleapis.com/calendar/v3/calendars/calendarId/events
+
+	calendarId=omiwade@gmail.com 
+	timeMin=2019-12-31T23:00:00-08:00
+	timeMax=2017-01-01T00:00:00-08:00
+	fields=items(attendees)
+
+
+
+			{
+			 "items": [
+			  {
+			   "attendees": [
+				{
+				 "email": "john.smith@gmail.com",
+				 "displayName": "John Smith",
+				 "responseStatus": "accepted"
+				},
+				{
+				 "email": "sarah@gmail.com",
+				 "displayName": "Soji Omiwade",
+				 "organizer": true,
+				 "self": true,
+				 "responseStatus": "accepted"
+				}
+			   ]
+			  },
+			  {
+			   "attendees": [
+				{
+				 "email": "sarah@gmail.com",
+				 "displayName": "John Smith",
+				 "responseStatus": "needsAction"
+				},
+
+
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "soji.omiwade@shell.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "tentative"
+    },
+    {
+     "email": "mwatkins@connectivetalent.com",
+     "displayName": "Michelle Watkins",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "soji.omiwade@shell.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "soji.omiwade@shell.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "sumeru.datta@lntinfotech.com",
+     "displayName": "Sumeru Datta",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "displayName": "John Smith",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "jeffrey.truesdale@uipath.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "lori.golden@uipath.com",
+     "organizer": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "vivek.malhotra@uipath.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "sean@otbrecruiting.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Oluwasoji Omiwade",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Oluwasoji Omiwade",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "amrish.chandra@synechron.com",
+     "displayName": "Amrish Chandra",
+     "optional": true,
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "nikhil.karmude@synechron.com",
+     "displayName": "Nikhil Karmude",
+     "optional": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "displayName": "Omiwade, Oluwasoji",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "soji.omiwade@shell.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "oomiwade@eprod.com",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@openlink.com",
+     "displayName": "Soji Omiwade",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "richard.cole@openlink.com",
+     "displayName": "Richard Cole",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "tope.omiwade@yahoo.com",
+     "displayName": "Tope Omiwade",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "topsedo@yahoo.com",
+     "displayName": "Tope Omiwade",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "google.com_hd858ao32a4nm2m4omj33puel4@group.calendar.google.com",
+     "displayName": "Anna Horrocks' Google Calendar",
+     "organizer": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "john.smith@gmail.com",
+     "displayName": "John Smith",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@aramcoservices.com",
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "dunniie@yahoo.com",
+     "displayName": "John Smith",
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "john.smith@gmail.com",
+     "displayName": "John Smith",
+     "responseStatus": "needsAction"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@aramcoservices.com",
+     "displayName": "Oluwasoji Omiwade",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "needsAction"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@aramcoservices.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "omiwade@gmail.com",
+     "displayName": "Soji Omiwade",
+     "organizer": true,
+     "self": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "oluwasoji.omiwade@aramcoservices.com",
+     "responseStatus": "accepted"
+    }
+   ]
+  },
+  {
+   "attendees": [
+    {
+     "email": "google.com_hd858ao32a4nm2m4omj33puel4@group.calendar.google.com",
+     "displayName": "Anna Horrocks' Google Calendar",
+     "organizer": true,
+     "responseStatus": "accepted"
+    },
+    {
+     "email": "omiwade@gmail.com",
+     "self": true,
+     "responseStatus": "accepted"
+    }
+   ]
+  }
+ ]
+}

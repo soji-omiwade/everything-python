@@ -1,0 +1,17 @@
+DELETE https://www.googleapis.com/calendar/v3/calendars/calendarId/events/eventId
+calendarId=omiwade@gmail.com
+
+Response: 
+{
+ "error": {
+  "errors": [
+   {
+    "domain": "global",
+    "reason": "deleted",
+    "message": "Resource has been deleted"
+   }
+  ],
+  "code": 410,
+  "message": "Resource has been deleted"
+ }
+}

@@ -1,0 +1,54 @@
+GET https://www.googleapis.com/calendar/v3/calendars/omiwade@gmail.com/events/n2m73h8co7j8ms75dhgv8of86k
+
+calendar-id
+no request body
+
+Response
+{
+ "kind": "calendar#event",
+ "etag": "\"3148214470838000\"",
+ "id": "n2m73h8co7j8ms75dhgv8of86k",
+ "status": "confirmed",
+ "htmlLink": "https://www.google.com/calendar/event?eid=bjJtNzNoOGNvN2o4bXM3NWRoZ3Y4b2Y4NmtfMjAxOTExMjhUMTYwMDAwWiBkdW5uaS5hcmlidWtpQG0",
+ "created": "2019-11-18T20:00:34.000Z",
+ "updated": "2019-11-18T20:00:35.419Z",
+ "summary": "Google I/O 2015",
+ "description": "A chance to hear more about Retain.",
+ "location": "800 Howard St., San Francisco, CA 94103",
+ "creator": {
+  "email": "omiwade@gmail.com"
+ },
+ "organizer": {
+  "email": "omiwade@gmail.com"
+ },
+ "start": {
+  "dateTime": "2019-11-28T08:00:00-08:00",
+  "timeZone": "America/Los_Angeles"
+ },
+ "end": {
+  "dateTime": "2019-11-28T10:00:00-08:00",
+  "timeZone": "America/Los_Angeles"
+ },
+ "recurrence": [
+  "RRULE:FREQ=DAILY;COUNT=2"
+ ],
+ "iCalUID": "n2m73h8co7j8ms75dhgv8of86k@google.com",
+ "sequence": 0,
+ "attendees": [
+  {
+   "email": "john.smith@gmail.com",
+   "self": true,
+   "responseStatus": "needsAction"
+  },
+  {
+   "email": "soji.omiwade@gmail.com",
+   "responseStatus": "needsAction"
+  }
+ ],
+ "reminders": {
+  "useDefault": true
+ }
+}
+
+
+
